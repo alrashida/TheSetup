@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/fragmentBarangkesukaan">
+
+    <fragment
+        android:id="@+id/fragmentBarangkesukaan"
+        android:name="com.mysus.myfav.fragment.FragmentBarangkesukaan"
+        android:label="fragment_barangkesukaan"
+        tools:layout="@layout/fragment_barangkesukaan" >
+        <action
+            android:id="@+id/action_fragmentBarangkesukaan_to_detailActivitySetup"
+            app:destination="@id/detailActivitySetup" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentkeinginan"
+        android:name="com.mysus.myfav.fragment.Fragmentkeinginan"
+        android:label="fragment_fragmentkeinginan"
+        tools:layout="@layout/fragment_fragmentkeinginan" />
+    <activity
+        android:id="@+id/detailActivitySetup"
+        android:name="com.mysus.myfav.DetailActivitySetup"
+        android:label="activity_detail_setup"
+        tools:layout="@layout/activity_detail_setup" />
+
+</navigation>
