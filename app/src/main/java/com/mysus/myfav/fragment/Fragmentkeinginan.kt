@@ -52,24 +52,25 @@ class Fragmentkeinginan : Fragment() {
                 adapterkeinginan.notifyDataSetChanged()
             } else {
                 Toast.makeText(context, "Database Sedangkosong", Toast.LENGTH_SHORT).show()
+                val retrofitService = RetrofitService.buildService(RetrofitInterface::class.java)
+
+                viewLifecycleOwner.lifecycleScope.launch {
+                    val mintadatakeinginan = retrofitService.getKeinginan()
+
+                    if (mintadatakeinginan.isSuccessful) {
+                        val datakeinginan = mintadatakeinginan.body() as List<Keiginanitem>
+                        datakeinginan.forEach {
+                            it.type = "Keinginan"
+                        }
+                        luroomDB.roomDao().insertData(datakeinginan)
+//                adapterkeinginan.adddata(datakeinginan)
+//                adapterkeinginan.notifyDataSetChanged()
+                    }
+                }
             }
         })
 
-        val retrofitService = RetrofitService.buildService(RetrofitInterface::class.java)
 
-        viewLifecycleOwner.lifecycleScope.launch {
-            val mintadatakeinginan = retrofitService.getKeinginan()
-
-            if (mintadatakeinginan.isSuccessful) {
-                val datakeinginan = mintadatakeinginan.body() as List<Keiginanitem>
-                datakeinginan.forEach {
-                    it.type = "Keinginan"
-                }
-                luroomDB.roomDao().insertData(datakeinginan)
-//                adapterkeinginan.adddata(datakeinginan)
-//                adapterkeinginan.notifyDataSetChanged()
-            }
-        }
     }
 
 
