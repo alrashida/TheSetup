@@ -63,8 +63,8 @@ class Fragmentkeinginan : Fragment() {
                             it.type = "Keinginan"
                         }
                         luroomDB.roomDao().insertData(datakeinginan)
-//                adapterkeinginan.adddata(datakeinginan)
-//                adapterkeinginan.notifyDataSetChanged()
+                adapterkeinginan.adddata(datakeinginan)
+                adapterkeinginan.notifyDataSetChanged()
                     }
                 }
             }

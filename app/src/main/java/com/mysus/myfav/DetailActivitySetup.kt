@@ -7,7 +7,6 @@ import com.mysus.myfav.databinding.ActivityDetailSetupBinding
 import com.mysus.myfav.model.KesukaanItem
 
 class DetailActivitySetup : AppCompatActivity() {
-
     private lateinit var binding: ActivityDetailSetupBinding
 
     companion object {

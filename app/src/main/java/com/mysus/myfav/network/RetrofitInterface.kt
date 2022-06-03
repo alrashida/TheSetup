@@ -1,6 +1,7 @@
 package com.mysus.myfav.network
 
 
+import com.mysus.myfav.model.Branditem
 import com.mysus.myfav.model.Keiginanitem
 import com.mysus.myfav.model.KesukaanItem
 import retrofit2.Response
@@ -12,5 +13,8 @@ interface RetrofitInterface {
 
     @GET("mydata/Barangkeiginan/Componen.json")
     suspend fun getKeinginan() : Response<List<Keiginanitem>>
+
+    @GET("mydata/brand.Json")
+    suspend fun getbrand() : Response<List<Branditem>>
 
 }

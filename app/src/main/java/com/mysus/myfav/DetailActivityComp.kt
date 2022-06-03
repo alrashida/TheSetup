@@ -16,7 +16,6 @@ class DetailActivityComp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailCompBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
         val data = intent.getParcelableExtra<Keiginanitem>(DATA)

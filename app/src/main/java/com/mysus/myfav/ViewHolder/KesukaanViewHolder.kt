@@ -10,7 +10,6 @@ class KesukaanViewHolder(val KesukaanBinding: ItemBarangkesukaanBinding):
      fun bindView(item: KesukaanItem){
    itemView.run {
        KesukaanBinding.txtJudulkesukaan.text = item.name
-
        Glide.with(this).load(item.imgurl).into(KesukaanBinding.imgkesukaan)
    }
      }
