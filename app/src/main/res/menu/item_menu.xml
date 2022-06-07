@@ -11,5 +11,8 @@
         android:id="@+id/fragmentkeinginan"
         android:icon="@drawable/favourite"
         />
+    <item android:title="Brand"
+        android:id="@+id/fragmentBrand"
+        android:icon="@drawable/game"/>
 
 </menu>

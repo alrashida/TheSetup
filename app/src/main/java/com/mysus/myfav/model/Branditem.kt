@@ -6,11 +6,8 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Branditem(
-    var id: Int = 0,
-    @Json(name = "imgurl")
-    var imgurl: String?,
-    @Json(name = "name")
-    val name: String?,
-    @Json(name = "Desc")
-    val Desc: String?,
+    @Json(name = "namaBrand")
+    var namaBrand : String?,
+    @Json(name = "data")
+    var data : List<KesukaanItem>
 ) : Parcelable

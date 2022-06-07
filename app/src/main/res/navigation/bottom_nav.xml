@@ -9,11 +9,7 @@
         android:id="@+id/fragmentBarangkesukaan"
         android:name="com.mysus.myfav.fragment.FragmentBarangkesukaan"
         android:label="fragment_barangkesukaan"
-        tools:layout="@layout/fragment_barangkesukaan" >
-        <action
-            android:id="@+id/action_fragmentBarangkesukaan_to_detailActivitySetup"
-            app:destination="@id/detailActivitySetup" />
-    </fragment>
+        tools:layout="@layout/fragment_barangkesukaan" />
     <fragment
         android:id="@+id/fragmentkeinginan"
         android:name="com.mysus.myfav.fragment.Fragmentkeinginan"
@@ -24,5 +20,10 @@
         android:name="com.mysus.myfav.DetailActivitySetup"
         android:label="activity_detail_setup"
         tools:layout="@layout/activity_detail_setup" />
+    <fragment
+        android:id="@+id/fragmentBrand"
+        android:name="com.mysus.myfav.fragment.BrandFragment"
+        android:label="fragment_brand"
+        tools:layout="@layout/fragment_brand" />
 
 </navigation>
