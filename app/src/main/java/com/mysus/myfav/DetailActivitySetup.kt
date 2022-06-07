@@ -25,6 +25,7 @@ class DetailActivitySetup : AppCompatActivity() {
         Glide.with(this).load(data?.imgurl).into(binding.imageView3)
         binding.txtTitle.text = data?.name
         binding.txtDesc.text = data?.Desc
+        binding.button.setOnClickListener {  }
 
 
     }

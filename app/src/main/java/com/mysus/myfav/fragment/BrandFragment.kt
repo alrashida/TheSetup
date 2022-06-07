@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.mysus.myfav.R
 import com.mysus.myfav.ViewHolder.BrandViewHolder
 import com.mysus.myfav.adapter.AdapterBrand
 import com.mysus.myfav.adapter.AdapterKesukaan

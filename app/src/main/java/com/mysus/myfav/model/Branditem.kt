@@ -9,5 +9,5 @@ data class Branditem(
     @Json(name = "namaBrand")
     var namaBrand : String?,
     @Json(name = "data")
-    var data : List<KesukaanItem>
+    var data : List<KesukaanItem> = arrayListOf()
 ) : Parcelable

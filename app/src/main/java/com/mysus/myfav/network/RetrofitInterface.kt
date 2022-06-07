@@ -14,7 +14,7 @@ interface RetrofitInterface {
     @GET("mydata/Barangkeiginan/Componen.json")
     suspend fun getKeinginan() : Response<List<Keiginanitem>>
 
-    @GET("mydata/brand.Json")
+    @GET("mydata/brand.json")
     suspend fun getbrand() : Response<List<Branditem>>
 
 }
